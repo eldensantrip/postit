@@ -70,7 +70,7 @@ button:hover{transform:translateY(-1px);filter:brightness(1.08)}button.secondary
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
 import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-auth.js";
 import { getFirestore, doc, getDoc, setDoc, onSnapshot, serverTimestamp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
-const firebaseConfig={apiKey:"AIzaSyCM4YRn91h8_jzaxy8YyppNLpft3nGyzk",authDomain:"postit-aa902.firebaseapp.com",projectId:"postit-aa902",storageBucket:"postit-aa902.firebasestorage.app",messagingSenderId:"1066175780553",appId:"1:1066175780553:web:273675e7a4b177cd429f18"};
+const firebaseConfig={apiKey:"AIzaSyCM4YRn91h8_jzaxy8YyppNLpftG3nGyzk",authDomain:"postit-aa902.firebaseapp.com",projectId:"postit-aa902",storageBucket:"postit-aa902.firebasestorage.app",messagingSenderId:"1066175780553",appId:"1:1066175780553:web:273675e7a4b177cd429f18"};
 const fbApp=initializeApp(firebaseConfig),auth=getAuth(fbApp),db=getFirestore(fbApp),googleProvider=new GoogleAuthProvider(),boardRef=doc(db,"boards","main");
 let currentUser=null,remoteReady=false,remoteListener=null,saveTimer=null,remoteApplying=false;
 const COLORS=[{n:'Jaune',v:'#fff1a8'},{n:'Rose',v:'#ffd5df'},{n:'Bleu',v:'#cde9f7'},{n:'Vert',v:'#d8efc9'},{n:'Lavande',v:'#e1d8f7'},{n:'Pêche',v:'#ffdfc4'},{n:'Blanc',v:'#fffdf0'},{n:'Gris',v:'#e2e5e5'}];
